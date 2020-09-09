@@ -1,6 +1,6 @@
 {
-	"name": "pwa-react-boilerplate",
-	"short_name": "pwa-react-boilerplate",
+	"name": "simple-password-generator",
+	"short_name": "simple-password-generator",
 	"icons": [
 		{
 			"src": "chrome-touch-icon-192x192.png",

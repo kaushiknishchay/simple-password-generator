@@ -1,5 +1,5 @@
 {
-  "name": "pwa-react-boilerplate",
+  "name": "simple-password-generator",
   "version": "0.1.5",
   "engines": {
     "node": ">=6.0"
