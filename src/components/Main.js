@@ -77,9 +77,7 @@ class Main extends React.Component {
 		return (
 			<div>
 				<Card>
-					<CardHeader><h3>Welcome!</h3></CardHeader>
-					<CardText style={{fontSize: '1em'}}>
-          
+					<CardText style={{fontSize: '1em'}}>          
 						<Slider
 							defaultValue={10}
 							description={`Password length (${this.state.options.length})`}
@@ -94,7 +92,6 @@ class Main extends React.Component {
 						/>
 
             <div style={styles.block}>
-              <h4>Include characters</h4>
               <Checkbox
                 checked={this.state.options.numbers}
                 name="numbers"
@@ -136,9 +133,13 @@ class Main extends React.Component {
             <br />
             <br />
             <Divider/>
-            <br />
             <h4>Generated Password</h4>
             <TextField
+              onClick={() => {
+                const input = document.getElementById("generated-password");
+                input.focus();
+                input.select();
+              }}
               fullWidth={true}
               id="generated-password"
               value={this.state.password}

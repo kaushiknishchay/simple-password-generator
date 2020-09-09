@@ -1,6 +1,6 @@
 {
-	"name": "simple-password-generator",
-	"short_name": "simple-password-generator",
+	"name": "Password Generator",
+	"short_name": "Password Generator",
 	"icons": [
 		{
 			"src": "chrome-touch-icon-192x192.png",
