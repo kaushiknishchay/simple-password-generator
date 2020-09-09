@@ -5,6 +5,7 @@
     "node": ">=6.0"
   },
   "dependencies": {
+    "generate-password": "^1.5.1",
     "history": "^3.0.0",
     "material-ui": "^0.16.7",
     "react": "15.4.2",
@@ -15,9 +16,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "rm -rf build && webpack --env.prod --progress --profile",
-    "gh": "yarn run build -- --env.prefix $npm_package_name && gh-pages -d build",
-    "test": "xo && NODE_ENV=test ava --verbose --serial",
-    "lint": "xo"
+    "gh": "yarn run build -- --env.prefix $npm_package_name && gh-pages -d build"
   },
   "devDependencies": {
     "ava": "^0.17.0",
