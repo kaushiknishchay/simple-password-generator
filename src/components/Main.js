@@ -7,6 +7,8 @@ import Slider from 'material-ui/Slider'
 import Checkbox from 'material-ui/Checkbox';
 import TextField from 'material-ui/TextField';
 import Divider from 'material-ui/Divider';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import Snackbar from 'material-ui/Snackbar';
 
 const styles = {
   block: {
@@ -23,7 +25,8 @@ class Main extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			password: "",
+      password: "",
+      copied: false,
 			options: {
         length: 10,
         numbers: true,
@@ -71,7 +74,13 @@ class Main extends React.Component {
     this.setState({
       password,
     })
-	}
+  }
+  
+  handleRequestClose = () => {
+    this.setState({
+      copied: false,
+    });
+  };
 
 	render() {
 		return (
@@ -143,7 +152,17 @@ class Main extends React.Component {
               id="generated-password"
               value={this.state.password}
             />
+            <CopyToClipboard text={this.state.password}
+              onCopy={() => this.setState({copied: true})}>
+              <Button label="Copy"/>
+            </CopyToClipboard>
             <br />
+            <Snackbar
+              open={this.state.copied}
+              message={this.state.password}
+              autoHideDuration={2000}
+              onRequestClose={this.handleRequestClose}
+            />
 					</CardText>
 				</Card>
 			</div>
