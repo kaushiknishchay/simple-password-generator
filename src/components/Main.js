@@ -87,8 +87,7 @@ class Main extends React.Component {
 							onChange={this.handleFieldChange}
 							required={true}
 							step={1}
-							value={10}
-					
+							value={this.state.options.length}
 						/>
 
             <div style={styles.block}>
