@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/simple-password-generator/chrome-splashscreen-icon-384x384.png","278e8e66828770445f154633ef833971"],["/simple-password-generator/chrome-touch-icon-192x192.png","93ab3cc2a5b9cd3b8869e35b3b0a3d79"],["/simple-password-generator/commons.chunk.js.ce405472.js","587609900887013be39a04c5618f3fbc"],["/simple-password-generator/favicon.ico","fd73a6eb26a08ee46e7fd3cc34e7f6bf"],["/simple-password-generator/index.html","f91388ba42f79286221de64eafc439c6"],["/simple-password-generator/main.ce405472.js","db985e02bcd2d54cd92a2d93f662f8a9"],["/simple-password-generator/manifest.json","7a3b8b500e17b51cf13fccfb73a4eccd"],["/simple-password-generator/sw.ce405472.js","c1452d7024cbcf70a1883ebd1c302e33"],["/simple-password-generator/vendor.ce405472.js","fc98b8320e63197a32c1a15789e2ccdf"]];
+var precacheConfig = [["/simple-password-generator/commons.chunk.js.0d3da8a1.js","135feab9dde632cf63111d0b51d4bf0a"],["/simple-password-generator/favicon.ico","bf73615e9caaa3d715820e11853d1d24"],["/simple-password-generator/index.html","488584935a2f30a485713e8a29998b33"],["/simple-password-generator/main.0d3da8a1.js","08650bc14c8710af98a9e98ec13feb71"],["/simple-password-generator/manifest.json","56d581dc9a99c6b77bd07e8d29ed62cd"],["/simple-password-generator/sw.0d3da8a1.js","c1452d7024cbcf70a1883ebd1c302e33"],["/simple-password-generator/vendor.0d3da8a1.js","fc98b8320e63197a32c1a15789e2ccdf"]];
 var cacheName = 'sw-precache-v2-simple-password-generator-' + (self.registration ? self.registration.scope : '');
 
 
