@@ -104,7 +104,7 @@ module.exports = ({prod = false, sw = false, prefix = ''} = {}) => {
 		webpackConfig.plugins.push(new SWPrecacheWebpackPlugin(serviceWorkerConfig));
 		webpackConfig.plugins.push(new CopyWebpackPlugin([{
 			context: './public',
-			from: '*.png'
+			from: '**/*.png'
 		}, {
 			from: './public/manifest.json'
 		}]));

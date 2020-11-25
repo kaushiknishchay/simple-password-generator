@@ -53,7 +53,7 @@ class Main extends React.Component {
 
   handleCheckbox = (e, value) => {
     const { currentTarget } = e
-    console.log(currentTarget.name || '', value)
+    // console.log(currentTarget.name || '', value)
     this.setState((state) => ({
       options: {
         ...state.options,
@@ -70,7 +70,7 @@ class Main extends React.Component {
     }
     
 		const password = generator.generate(opts);
-    console.log(password)
+    // console.log(password)
     this.setState({
       password,
     })
