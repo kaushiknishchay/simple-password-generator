@@ -165,6 +165,7 @@ class Main extends React.Component {
             />
 					</CardText>
 				</Card>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 			</div>
 		);
 	}
