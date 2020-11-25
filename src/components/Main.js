@@ -159,7 +159,7 @@ class Main extends React.Component {
             <br />
             <Snackbar
               open={this.state.copied}
-              message={this.state.password}
+              message="Password Copied to clipboard"
               autoHideDuration={2000}
               onRequestClose={this.handleRequestClose}
             />
